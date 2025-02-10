@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sachita Rayapati</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">Sachita Rayapati</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="/index.html" class="navbar__links"> About </a></li>
+                <li class="navbar__item"><a href="/resume.html" class="navbar__links"> Resume </a></li>
+                <li class="navbar__item"><a href="/projects.html" class="navbar__links"> Projects </a></li>
+                <li class="navbar__item"><a href="/writings.html" class="navbar__links"> Writings </a></li>
+                <li class="navbar__btn"><a href="/contactme.html" class="button"> Contact Me </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Projects Section -->
+    <section class="projects-section">
+        <h1>My Projects</h1>
+        
+        <!-- Project Container -->
+        <div class="project-container">
+            
+            <!-- Project 1 -->
+            <div class="project">
+                <div class="project-text">
+                    <h4>SleePod</h4>
+                    <h3 class="subheading">(Ongoing)</h3>
+                    <p>The SleepPod tracks and analyzes various sleep aspects to promote health 
+                        and well-being. It monitors snoring, palpitations, hyperventilation, breathing 
+                        lapses, and sleep disturbances, while optimizing the sleep environment by 
+                        managing external factors. The hardware includes microphones, sound meters, 
+                        respiratory and heart rate sensors, and environmental sensors for temperature, 
+                        humidity, and noise. These components work with sound analytics software to 
+                        process audio data. The device, placed on a nightstand, uses filtering techniques 
+                        to minimize echo and stores audio files on a memory card or in real-time, 
+                        transferring them to the cloud for analysis. Security is ensured through 
+                        end-to-end encryption. The system focuses on sleep patterns, deprivation, and 
+                        age-related factors to provide insights for improving sleep quality and well-being, 
+                        though it is not for diagnostic purposes.</p>
+                </div>
+                <img src="images/Project1.png" alt="Project 1">
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project">
+                <div class="project-text">
+                    <h4>Smart Mirror</h4>
+                    <h3 class="subheading">Mirror Mirror on the Wall - CSV</h3> <!-- This is the subheading -->
+                    <p>The project involves developing a smart mirror platform with a Raspberry Pi and a 
+                        custom two-way mirror to provide an interactive hub for real-time information and 
+                        hands-free functionality through Amazon's Alexa. The mirror will overlay digital 
+                        content onto the reflection, creating a dynamic interface. The Raspberry Pi will 
+                        handle data processing, API interactions, and the user interface.<br><br>API 
+                        integrations such as Spotify for music and WeatherApp for weather forecasts will 
+                        display real-time data on the mirror. Alexa's functionality will be enhanced to offer 
+                        intuitive, context-aware interactions, providing a streamlined, voice-controlled 
+                        experience that emphasizes ease of use and accessibility.
+                    </p>
+                </div>
+                <img src="images/Project2.jpg" alt="Project 2">
+            </div>
+
+            
+            <!-- Project 3 -->
+            <div class="project project-3">
+                <div class="project-text">
+                    <h4>Music Player</h4>
+                    <p>In the circuit implementation, a voltage regulator converts the 9V battery voltage 
+                        to a stable 5V output. The regulator's first pin connects to the positive terminal 
+                        of the battery, the second pin to the negative terminal of a capacitor and the 
+                        ground rail of the breadboard, while the third pin provides the 5V supply to the 
+                        circuit. The microcontroller is powered by connecting its VCC pin to the positive 
+                        terminal and its GND pin to the negative terminal of the breadboard.<br><br>The 
+                        keypad is connected to Port C of the microcontroller, with the rows linked to pins 
+                        PC0–PC3 and columns to pins PC4–PC7. Three 1000-ohm resistors connect between the 
+                        negative terminal and the VO pin of the LCD. The LCD's RS, R/W, and EN pins connect 
+                        to Port B0, B1, and B2 for control. Data passes through Port D's DB0–DB7 pins. 
+                        A 0.1uF capacitor connects the speaker to the microcontroller via Port PB3. The 
+                        keypad is used to select songs (A, B, C, D), and the MCU displays the song name on 
+                        the LCD. Tempo and pitch keys adjust preferences, updating the notes played through 
+                        the speaker.</p>
+                </div>
+                <img src="images/Project3.png" alt="Project 3">
+            </div>
+
+
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

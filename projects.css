@@ -1,0 +1,151 @@
+/* Global styles */
+body {
+    background-color: #c4c6b7; /* Background color */
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* Main Projects Section */
+.projects-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.projects-section h1 {
+    font-size: 2rem;
+    background-color: #c4c6b7;
+    background-image: linear-gradient(to top, #18697e 0%, #18697e 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding: 0 15px;
+}
+
+.projects-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Project Container */
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Individual Project Styling */
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 80%; /* Width of the project container */
+    max-width: 1200px;
+}
+
+/* Project text container */
+.project-text {
+    width: 50%; /* Text area takes half width */
+    padding: 20px;
+}
+
+.project-text h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Styling for the subheading under the project title */
+.project-text h3.subheading {
+    font-size: 1rem;  /* Smaller size compared to h4 */
+    color: #777;  /* Lighter color for the subheading */
+    margin-top: 5px;  /* Add some spacing between h4 and h3 */
+    margin-bottom: 10px;  /* Space below h3 */
+    font-weight: 400;  /* Lighter weight to differentiate from the h4 title */
+}
+
+
+.project-text p {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+/* Image Styling */
+.project img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    max-width: 500px; /* Set a max width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+/* Specific Styling for Project 3 */
+.project-3 {
+    flex-direction: column; /* Stack the image below the text */
+    align-items: center; /* Center align the content */
+}
+
+/* Increase size of Project 3 image */
+.project-3 img {
+    width: 80%; /* Increased image size to 80% of the container width */
+    max-width: 1000px; /* Increased max-width for a larger image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Add some space between the description and the image */
+}
+
+/* Styling for Each Project Box */
+.project {
+    background-color: white; /* White background for each project */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    padding: 20px; /* Add padding inside each box */
+    margin: 20px 0; /* Space between each project box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    display: flex;
+    flex-direction: row; /* Default: image on the right, text on the left */
+    align-items: center; /* Center the items vertically */
+    justify-content: space-between; /* Space out the content */
+    overflow: hidden; /* Prevent the content from overflowing the box */
+}
+
+/* For Project 3 with Text Below */
+.project-3 {
+    flex-direction: column; /* Stack text and image vertically for Project 3 */
+    align-items: center; /* Center the content */
+}
+
+/* Add styling to the project text container */
+.project-text {
+    text-align: left; /* Left align text */
+    width: 60%; /* Limit the width of the text */
+    margin: 0;
+}
+
+/* Add styling for images */
+.project img {
+    width: 40%; /* Adjust image width */
+    height: auto;
+    border-radius: 8px; /* Optional: add rounded corners to the image */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+}
+
+/* For the first two projects (text on left, image on right) */
+.project:not(.project-3) {
+    flex-direction: row; /* Default layout */
+}
+
+.project:not(.project-3) .project-text {
+    width: 50%; /* Limit width of text */
+}
+
+.project:not(.project-3) img {
+    width: 45%; /* Adjust image width */
+}
+.project-3 img {
+    width: 85% !important;
+    max-width: 1200px !important;
+    height: auto;
+    margin-top: 20px;
+}
