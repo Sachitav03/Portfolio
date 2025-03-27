@@ -1,0 +1,60 @@
+/* Background color for the page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: #c4c6b7; /* Matching index.html */
+    color: black; /* Ensure readability */
+}
+
+/* writing1 section styling */
+.writing1-section {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* writing1 heading with gradient effect */
+.writing1-section {
+    font-size: 1.5rem;
+    background-color: #c4c6b7;
+    background-image: linear-gradient(to top, #18697e 0%, #18697e 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding: 0 15px;
+}
+
+/* writing1 frame container */
+.writing1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Embedded PDF styling */
+.writing1-frame {
+    width: 90%;
+    height: 800px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Download link styling */
+p a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #5a5c51;
+    font-weight: bold;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+p a:hover {
+    text-decoration: underline;
+    color: #3d3f36;
+}
