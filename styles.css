@@ -1,8 +1,7 @@
 * {
-    box-sizing: content-box;
+    box-sizing:content-box;
     margin: 0;
     padding: 0;
-    padding-bottom: 5px;
     font-family: 'Kumbh Sans', sans-serif;
 }
 
@@ -21,12 +20,13 @@
 .navbar__container {
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: auto;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
+    overflow: hidden;
 }
 
 #navbar__logo {
@@ -103,9 +103,10 @@
 }
 
 @media screen and (max-width: 960px) {
+    
     .navbar__container {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         height: 80px;
         z-index: 1;
         width: 100%;
@@ -124,6 +125,7 @@
         transition: all 0.5s ease;
         height: 50vh; /*scroll bar*/
         z-index: -1;
+        justify-content: flex-end;
         background: #131313;
     }
 
@@ -199,21 +201,20 @@
 
 /*Hero*/
 .main {
-    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr; /* Change to a single column */
+    
+    height: 100vh;
+    background-color: #c4c6b7;
 }
 
 .main__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    display: flex;
+   
     margin: 0 auto;
-    height: 100%;
-    background-color: #c4c6b7;
-    z-index: 1;
-    width: 100%;
-    max-width: 100%;
     padding: 0;
-    /*padding-right: 0;*/
+    height: auto;
+    min-height: 10vh;
 }
 
 .main__content h1 {
@@ -225,7 +226,16 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    padding: 0 15px;
+    padding: 0 25px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.main__content img.about-img {
+    width: 275px;  /* Makes the image responsive */
+    height: 275px;  /* Ensures the image retains its aspect ratio */
+    display: block;  /* Removes any space below the image */
+    margin: 20px auto;  /* Centers the image horizontally and adds spacing */
 }
 
 
@@ -239,76 +249,27 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     padding: 0 15px;
+    text-align: center;
 }
 
 .main__content p{
     font-size: 0.9rem;
     background-color: #c4c6b7;
     background-size: 100%;
-    padding: 0 15px;
-}
-
-.main__btn {
-    font-size: 1rem;
-    background-image: linear-gradient(to top, #18697e 0%, #18697e 100%);
-    padding: 14px 40px;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.35s;
-}
-
-.main__btn a {
-   position: relative;
-   z-index: 2;
-   color: #fff;
-   text-decoration: none; 
-}
-
-.main__btn:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #04305d;
-    transition: all 0.35s;
-    border-radius: 4px;
-}
-
-.main__btn:hover {
-    color: #fff;
-}
-
-.main__btn:hover:after {
-    width: 100%;
-}
-
-.main__img--container {
+    padding: 0px 25%;
     text-align: center;
-    /*max-width: 100%;
-    height: auto;*/
-}
-
-#main__img {
-    /*max-width: 100%;*/
-    height: 80%;
-    width: 80%;
-
+    padding-top: 30px;
 }
 
 /*Mobile*/
 
 @media screen and ( max-width: 768px) {
+    .main{
+        grid-template-columns: 1fr;
+    }
     .main__container {
         display: flow-root;
         grid-template-columns: none;
-        align-items: center;
-        justify-self: center;
         width: 100%;
         margin: 0 auto;
         max-width: 100%;
@@ -317,14 +278,21 @@
     }
 
     .main__content {
-        text-align: center;
         margin-bottom: 4rem;
         
     }
+    .main__content img.about-img {
+        width: 100%;  /* Makes the image responsive */
+        max-width: 250px;  /* Optional: Limits the image's maximum size */
+        height: auto;  /* Ensures the image retains its aspect ratio */
+        display: block;  /* Removes any space below the image */
+        margin: 20px auto;  /* Centers the image horizontally and adds spacing */
+    }
 
     .main__content h1{
-        font-size: 2rem;
+        font-size: 3rem;
         margin-top: 2rem;
+        padding-top: 0;
     }
 
     .main__content h2{
@@ -334,7 +302,8 @@
     .main__content p {
         margin-top: 1rem;
         font-size: 0.9rem;
-        /*padding: 0;*/
+        padding-top: 0;
+        padding: 0px 25px;
     }
     
 
@@ -378,6 +347,7 @@
 
 .footer__link--items h2 {
     font-size: 1.5rem;
+    text-align: center;
     background-color: #c4c6b7;
     background-image: linear-gradient(to top, #fff 0%, #fff 100%);
     background-size: 100%;

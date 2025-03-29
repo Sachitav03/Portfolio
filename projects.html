@@ -59,15 +59,11 @@
                 <div class="project-text">
                     <h4>Smart Mirror</h4>
                     <h3 class="subheading">Mirror Mirror on the Wall - CSV</h3> <!-- This is the subheading -->
-                    <p>The project involves developing a smart mirror platform with a Raspberry Pi and a 
-                        custom two-way mirror to provide an interactive hub for real-time information and 
-                        hands-free functionality through Amazon's Alexa. The mirror will overlay digital 
-                        content onto the reflection, creating a dynamic interface. The Raspberry Pi will 
-                        handle data processing, API interactions, and the user interface.<br><br>API 
-                        integrations such as Spotify for music and WeatherApp for weather forecasts will 
-                        display real-time data on the mirror. Alexa's functionality will be enhanced to offer 
-                        intuitive, context-aware interactions, providing a streamlined, voice-controlled 
-                        experience that emphasizes ease of use and accessibility.
+                    <p>"Mirror Mirror on the CVS” is an innovative smart mirror project that combines advanced technology with everyday functionality, offering users a unique and seamless experience. The concept stems from the increasing demand for smart home devices that enhance convenience and multitasking in daily life. Traditional mirrors, while essential, are often overlooked as potential smart devices. Our project reimagines the mirror as an interactive, multi-functional tool that integrates real-time information and hands-free controls.
+                        <br><br>The smart mirror features a two-way reflective surface that overlays digital content such as weather updates, time, and music playback. A Raspberry Pi serves as the core of the system, handling data processing and integration with APIs like Spotify and WeatherApp to deliver real-time functionality. To ensure a user-friendly experience, the device incorporates Amazon Alexa for voice-activated controls, allowing users to interact with the mirror without touching it.
+                        <br><br>This project is designed for individuals who value efficiency and seek to streamline their daily routines. By enabling users to check critical updates while getting ready or performing other tasks, the smart mirror transforms the way we interact with mirrors. It also provides a platform for further expansion, with potential modules like news updates, calendars, and even voice-controlled LED lighting.
+                        <br><br>The primary goal is to deliver a reliable, fully customizable, and aesthetically pleasing product that seamlessly integrates into modern homes. Through this project, our team explores the intersection of hardware, software, and user-centered design, creating a device that not only meets functional needs but also enhances the overall smart home ecosystem.
+                        
                     </p>
                 </div>
                 <img src="images/Project2.jpg" alt="Project 2">
@@ -77,21 +73,27 @@
             <!-- Project 3 -->
             <div class="project project-3">
                 <div class="project-text">
-                    <h4>Music Player</h4>
-                    <p>In the circuit implementation, a voltage regulator converts the 9V battery voltage 
-                        to a stable 5V output. The regulator's first pin connects to the positive terminal 
-                        of the battery, the second pin to the negative terminal of a capacitor and the 
-                        ground rail of the breadboard, while the third pin provides the 5V supply to the 
-                        circuit. The microcontroller is powered by connecting its VCC pin to the positive 
-                        terminal and its GND pin to the negative terminal of the breadboard.<br><br>The 
-                        keypad is connected to Port C of the microcontroller, with the rows linked to pins 
-                        PC0–PC3 and columns to pins PC4–PC7. Three 1000-ohm resistors connect between the 
-                        negative terminal and the VO pin of the LCD. The LCD's RS, R/W, and EN pins connect 
-                        to Port B0, B1, and B2 for control. Data passes through Port D's DB0–DB7 pins. 
-                        A 0.1uF capacitor connects the speaker to the microcontroller via Port PB3. The 
-                        keypad is used to select songs (A, B, C, D), and the MCU displays the song name on 
-                        the LCD. Tempo and pitch keys adjust preferences, updating the notes played through 
-                        the speaker.</p>
+                    <h4>Music Player Using ATMega32</h4>
+                    <p>This project implements an embedded music player centered around the ATMega32 microcontroller, utilizing a keypad for input, an LCD for display, and a speaker for audio output. The system allows users to select and play pre-stored musical notes, adjust playback settings, and view song information in real time.
+
+                        <br><br><b>Hardware Design</b>
+                        <br>The circuit is powered by a 9V battery, regulated to a stable 5V using a voltage regulator. The ATMega32 microcontroller is powered by connecting its VCC and GND pins to the corresponding terminals on the breadboard.
+                        
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;- <u>Keypad (Port C):</u> Used for user input, with rows connected to PC0–PC3 and columns to PC4–PC7. The user selects songs (A, B, C, D) and adjusts settings such as tempo and pitch.
+                        
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;- <u>LCD (Port B & Port D):</u> Displays the selected song name and playback settings. The RS, R/W, and EN pins connect to PB0, PB1, and PB2, while data is sent through DB0–DB7 (Port D). Three 1000-ohm resistors help stabilize the display.
+                        
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;- <u>Speaker (Port PB3):</u> Generates musical output based on stored notes. A 0.1µF capacitor connects the speaker to the microcontroller to ensure smooth audio playback.
+                        
+                        <br><br><b>Software Implementation</b>
+                        <br>The system is programmed in C, with functionalities including:
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;- <u>Song Selection:</u> Users choose songs (A, B, C, D) via the keypad.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;- <u>LCD Display:</u> The LCD updates to show the selected song and playback settings.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;- <u>Tone Generation:</u> Musical notes are stored in memory and played through the speaker using PWM (Pulse Width Modulation).
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;- <u>Tempo & Pitch Control:</u> Special keys adjust playback speed and pitch dynamically.
+                        
+                        <br><br>This project demonstrates embedded systems design, integrating real-time user interaction, audio generation, and display control using the ATMega32.
+                    </p>
                 </div>
                 <img src="images/Project3.png" alt="Project 3">
             </div>

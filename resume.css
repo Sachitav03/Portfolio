@@ -1,60 +1,68 @@
-/* Background color for the page */
+/* General body styling */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
-    background-color: #c4c6b7; /* Matching index.html */
-    color: black; /* Ensure readability */
+    background-color: #c4c6b7; /* Softer background */
+    color: black;
 }
 
-/* Resume section styling */
+/* Center the resume section and add padding */
 .resume-section {
     text-align: center;
-    margin: 50px auto;
+    margin: 60px auto;
     padding: 20px;
 }
 
-/* Resume heading with gradient effect */
-.resume-section {
-    font-size: 1.5rem;
-    background-color: #c4c6b7;
-    background-image: linear-gradient(to top, #18697e 0%, #18697e 100%);
+/* Resume header with gradient effect */
+.resume-section h1 {
+    font-size: 2rem;
+    background-image: linear-gradient(to right, #18697e, #0d3c4a);
     background-size: 100%;
     -webkit-background-clip: text;
-    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    padding: 0 15px;
-}
-
-/* Resume frame container */
-.resume-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* Embedded PDF styling */
-.resume-frame {
-    width: 90%;
-    height: 800px;
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Download link styling */
-p a {
-    font-size: 18px;
-    text-decoration: none;
-    color: #5a5c51;
     font-weight: bold;
-    margin-top: 15px;
-    display: inline-block;
+    margin-bottom: 20px;
 }
 
-p a:hover {
-    text-decoration: underline;
-    color: #3d3f36;
+/* Resume card container */
+.resume-container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Embedded PDF */
+.resume-frame {
+    width: 100%;
+    height: 800px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stylish Download Button */
+.download-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #18697e;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #0d3c4a;
+    transform: scale(1.05);
 }

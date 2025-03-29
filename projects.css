@@ -82,20 +82,6 @@ body {
     border-radius: 8px;
 }
 
-/* Specific Styling for Project 3 */
-.project-3 {
-    flex-direction: column; /* Stack the image below the text */
-    align-items: center; /* Center align the content */
-}
-
-/* Increase size of Project 3 image */
-.project-3 img {
-    width: 80%; /* Increased image size to 80% of the container width */
-    max-width: 1000px; /* Increased max-width for a larger image */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 20px; /* Add some space between the description and the image */
-}
-
 /* Styling for Each Project Box */
 .project {
     background-color: white; /* White background for each project */
@@ -112,23 +98,33 @@ body {
 
 /* For Project 3 with Text Below */
 .project-3 {
-    flex-direction: column; /* Stack text and image vertically for Project 3 */
-    align-items: center; /* Center the content */
+    /* Changed to flex-direction: row to match Projects 1 and 2 */
+    flex-direction: row; /* Ensure text and image are aligned horizontally */
+    align-items: center; /* Center the content vertically */
+    justify-content: space-between; /* Space out the content */
 }
 
 /* Add styling to the project text container */
 .project-text {
     text-align: left; /* Left align text */
-    width: 60%; /* Limit the width of the text */
+    width: 50%; /* Limit the width of the text */
     margin: 0;
 }
 
 /* Add styling for images */
 .project img {
-    width: 40%; /* Adjust image width */
+    width: 45%; /* Adjust image width */
     height: auto;
     border-radius: 8px; /* Optional: add rounded corners to the image */
     object-fit: cover; /* Ensures the image fills the area without distortion */
+}
+
+/* For Project 3, make sure the image and text have similar proportions */
+.project-3 img {
+    width: 45%; /* Set image width to 45% of the container */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 /* For the first two projects (text on left, image on right) */
@@ -143,9 +139,10 @@ body {
 .project:not(.project-3) img {
     width: 45%; /* Adjust image width */
 }
+
 .project-3 img {
-    width: 85% !important;
-    max-width: 1200px !important;
+    width: 45%; /* Ensure image is correctly sized for Project 3 */
     height: auto;
-    margin-top: 20px;
+    border-radius: 8px;
+    object-fit: cover;
 }
