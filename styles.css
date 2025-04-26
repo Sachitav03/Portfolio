@@ -103,14 +103,14 @@
 }
 
 .navbar__toggle {
-    display:flexbox; 
+    display: none; /* hide it on desktop by default */
   }
   
 .navbar__toggle.is-active .bar {
     background-color: #fff;
   }
   
-.bar {
+  .bar {
     display: block;
     width: 25px;
     height: 3px;
@@ -154,7 +154,6 @@
         transition: all 0.5s ease;
         height: 700%;
         font-size: 1.6rem;
-        z-index: 999;
     }
 
     #navbar__logo {
