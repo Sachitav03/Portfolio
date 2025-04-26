@@ -205,7 +205,7 @@
     }
 
     #mobile-menu.is-active .bar:nth-child(2) {
-        opacity: 0;
+        opacity: 1;
     }
 
     #mobile-menu.is-active .bar:nth-child(1) {
