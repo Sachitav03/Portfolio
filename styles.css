@@ -138,29 +138,41 @@
         width: 100%;
         position: absolute;
         top: -1000px;
-        opacity: 0;
         transition: all 0.5s ease;
-        height: 50vh; /*scroll bar*/
+        height: 50vh;
         z-index: -1;
-        background: #131313;
+        background: #131313; /* background is fine */
         flex-direction: column;
         align-items: center;
+        visibility: hidden; /* NEW */
     }
 
     .navbar__menu.active {
         background: #131313;
         top: 100%;
-        opacity: 1;
         transition: all 0.5s ease;
         height: 700%;
         font-size: 1.6rem;
+        visibility: visible; /* NEW */
     }
 
     #navbar__logo {
         padding-left: 25px;
     }
 
-    .navbar__toggle .bar{
+    .navbar__toggle {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0.2rem;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
         width: 25px;
         height: 3px;
         margin: 5px auto;
@@ -199,10 +211,7 @@
         margin: 0;
     }
 
-    .navbar__toggle .bar {
-        display: block;
-        cursor: pointer;
-    }
+    
 
     #mobile-menu.is-active .bar:nth-child(2) {
         opacity: 0;
