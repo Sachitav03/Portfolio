@@ -147,11 +147,14 @@
     .navbar__menu.active {
         top: 100%;
         opacity: 1;
-        height: auto; /* Changed from 700% to auto */
+        height: auto; /* Changed from 700% */
         font-size: 1.6rem;
         pointer-events: auto;
         z-index: 99;
-        background-color: #131313; /* Make sure this is fully opaque */
+        background-color: #131313 !important; /* Added !important to override any conflicting styles */
+        transition: all 0.5s ease;
+        position: absolute;
+        width: 100%;
     }
 
     #navbar__logo {
