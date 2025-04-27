@@ -140,21 +140,20 @@
         top: -1000px;
         opacity: 0;
         transition: all 0.5s ease;
-        height: 50vh; /*scroll bar*/
+        height: auto; /* Changed from 50vh */
         background: #131313;
+        visibility: hidden; /* Added for better control */
     }
 
     .navbar__menu.active {
-        top: 100%;
+        top: 80px; /* Set to exact navbar height */
         opacity: 1;
-        height: auto; /* Changed from 700% */
+        visibility: visible; /* Added for better control */
+        height: auto;
         font-size: 1.6rem;
         pointer-events: auto;
         z-index: 99;
-        background-color: #131313 !important; /* Added !important to override any conflicting styles */
-        transition: all 0.5s ease;
-        position: absolute;
-        width: 100%;
+        background: #131313; /* Solid background */
     }
 
     #navbar__logo {
