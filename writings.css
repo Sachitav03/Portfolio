@@ -1,5 +1,6 @@
-.body {
+body {
     background-color: #c4c6b7;
+    margin-bottom: 15px;
 }
 
 .writings-section {
@@ -112,16 +113,45 @@
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
+    text-decoration: none; /* Removes underline */
+
+}
+
+/* Also, add this to remove link styling from the parent element */
+.writing-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* And make sure the text doesn't change color on hover */
+.writing-link:hover .writing-text h4 {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Also, add this to remove link styling from the parent element */
+.writing-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* And make sure the text doesn't change color on hover */
+.writing-link:hover .writing-text h4 {
+    text-decoration: none;
+    color: inherit;
+}
 }
 
 /* Responsive */
-@media (max-width: 992px) {
+@media (max-width: 550px) {
     .writing {
-        width: 45%;
+        width: 30%;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 770px) {
     .writing {
         width: 100%;
     }
