@@ -1,6 +1,6 @@
 /* Global styles */
 body {
-    background-color: #c4c6b7; /* Background color */
+    background-color: #f3f4ef; /* Background color */
     font-family: 'Kumbh Sans', sans-serif;
 }
 
@@ -16,8 +16,8 @@ body {
 
 .projects-section h1 {
     font-size: 2rem;
-    background-color: #c4c6b7;
-    background-image: linear-gradient(to top, #18697e 0%, #18697e 100%);
+    background-color: #f3f4ef;
+    background-image: linear-gradient(to top, #707171 0%, #707171 100%);    background-size: 100%;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;

@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
-    background-color: #c4c6b7; /* Matching index.html */
+    background-color: #f3f4ef; /* Matching index.html */
     color: black; /* Ensure readability */
 }
 
@@ -17,8 +17,8 @@ body {
 /* writing2 heading with gradient effect */
 .writing2-section {
     font-size: 1.5rem;
-    background-color: #c4c6b7;
-    background-image: linear-gradient(to top, #18697e 0%, #18697e 100%);
+    background-color: #f3f4ef;
+    background-image: linear-gradient(to top, #707171 0%, #707171 100%);    background-size: 100%;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;

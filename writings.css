@@ -1,5 +1,5 @@
 body {
-    background-color: #c4c6b7;
+    background-color: #f3f4ef;
     margin-bottom: 15px;
 }
 
@@ -7,13 +7,13 @@ body {
     padding: 5px 10px;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #c4c6b7;
+    background-color: #f3f4ef;
 }
 
 .writings-section h2 {
     font-size: 2rem;
     background-color: #c4c6b7;
-    background-image: linear-gradient(to top, #18697e 0%, #18697e 100%);
+    background-image: linear-gradient(to top, #707171 0%, #707171 100%);    background-size: 100%;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;

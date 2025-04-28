@@ -8,7 +8,7 @@
 
 /* Navbar Styles */
 .navbar {
-    background: #04305d;
+    background: #747475;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -32,8 +32,8 @@
 }
 
 #navbar__logo {
-    background-color: #18697e;
-    background-image: linear-gradient(to top, #16a97d 0%, #cbcfd0 100%);
+    background-color: #707171;
+    background-image: linear-gradient(to top, #f5f9f9 0%, #cbcfd0 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -43,7 +43,9 @@
     align-items: center;
     text-decoration: none;
     font-size: 2rem;
+    font-weight: bold;
 }
+
 
 .navbar__menu {
     display: flex;
@@ -98,7 +100,7 @@
 }
 
 .navbar__links:hover {
-    color: #16a97d;
+    color: #c4c6b7;
     transition: all 0.3s ease;
 }
 
@@ -126,7 +128,7 @@
         display: flex;
         justify-content: center;
         align-items: center; /* vertically center items */
-        background-color: #131313;
+        background-color: #8a8a8d;
         height: 60px; /* <-- control the height directly */
         padding: 0; /* remove extra padding */
         padding-bottom: 10px;
@@ -148,7 +150,7 @@
     grid-template-columns: 1fr; /* Change to a single column */
     flex: 1;
     height: 100vh;
-    background-color: #c4c6b7;
+    background-color: #f3f4ef;
     padding-top: 30px;
 }
 
@@ -162,8 +164,8 @@
 
 .main__content h1 {
     font-size: 3rem;
-    background-color: #c4c6b7;
-    background-image: linear-gradient(to top, #18697e 0%, #18697e 100%);
+    background-color: #f3f4ef;
+    background-image: linear-gradient(to top, #8a8a8d 0%, #8a8a8d 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -177,8 +179,8 @@
 
 .main__content h2 {
     font-size: 2rem;
-    background-color: #c4c6b7;
-    background-image: linear-gradient(to top, #18697e 0%, #18697e 100%);
+    background-color: #f3f4ef;
+    background-image: linear-gradient(to top, #8a8a8d 0%, #8a8a8d 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -190,7 +192,8 @@
 
 .main__content p{
     font-size: 0.9rem;
-    background-color: #c4c6b7;
+    background-color: #f3f4ef;
+    color: #49494a;
     background-size: 100%;
     padding: 0px 25%;
     text-align: center;
