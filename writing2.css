@@ -27,6 +27,10 @@ body {
     padding: 0 15px;
 }
 
+.navbar__menu a {
+    font-weight: bold;
+}
+
 /* writing2 frame container */
 .writing2-container {
     display: flex;

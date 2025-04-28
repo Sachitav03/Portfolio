@@ -10,6 +10,10 @@ body {
     padding: 20px;
 }
 
+.navbar__menu a {
+    font-weight: bold;
+}
+
 .projects-section h1 {
     font-size: 2rem;
     background-color: #c4c6b7;

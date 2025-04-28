@@ -54,6 +54,10 @@ p a {
     display: inline-block;
 }
 
+.navbar__menu a {
+    font-weight: bold;
+}
+
 p a:hover {
     text-decoration: underline;
     color: #3d3f36;

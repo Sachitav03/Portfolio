@@ -58,3 +58,7 @@ p a:hover {
     text-decoration: underline;
     color: #3d3f36;
 }
+
+.navbar__menu a {
+    font-weight: bold;
+}

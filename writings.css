@@ -160,3 +160,7 @@ body {
         padding-top: 45px;
     }
 }
+
+.navbar__menu a {
+    font-weight: bold;
+}

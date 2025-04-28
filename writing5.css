@@ -44,6 +44,10 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.navbar__menu a {
+    font-weight: bold;
+}
+
 /* Download link styling */
 p a {
     font-size: 18px;
