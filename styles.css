@@ -1,10 +1,12 @@
+/* General Styles */
 * {
-    box-sizing:content-box;
+    box-sizing: content-box;
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+/* Navbar Styles */
 .navbar {
     background: #04305d;
     height: 80px;
@@ -36,27 +38,25 @@
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-colot: transparent;
+    -moz-text-fill-color: transparent;
     display: flex;
     align-items: center;
-    cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
 }
 
-.fa-gem {
-    margin-right: 0.5rem;
-}
-
-.navbar__menu{
+.navbar__menu {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     list-style: none;
     text-align: center;
+    width: 100%;
 }
 
 .navbar__item {
-    height: 80px;
+    height: 20px;
 }
 
 .navbar__links {
@@ -65,7 +65,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     height: 100%;
 }
 
@@ -103,129 +103,10 @@
 }
 
 .navbar__toggle {
-    display: none; /* hide it on desktop by default */
-  }
-  
-.navbar__toggle.is-active .bar {
-    background-color: #fff;
-  }
-  
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-  }
-
-@media screen and (max-width: 960px) {
-    
-    .navbar__container {
-        display: flex;
-        justify-content: flex-start;
-        height: 80px;
-        z-index: 1;
-        width: 100%;
-        max-width: 1300px;
-        padding: 0;
-    }
-
-    .navbar__menu {
-        display: none;
-        grid-template-columns: auto;
-        margin: 0;
-        width: 100%;
-        position: absolute;
-        top: -1000px;
-        opacity: 0;
-        transition: all 0.5s ease;
-        height: 50vh; /*scroll bar*/
-        z-index: -1;
-        background: #131313;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar__menu.active {
-        display: flex;
-        background: #131313;
-        top: 100%;
-        opacity: 1;
-        transition: all 0.5s ease;
-        height: 700%;
-        font-size: 1.6rem;
-    }
-
-    #navbar__logo {
-        padding-left: 25px;
-    }
-
-    .navbar__toggle {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin: 0.5rem;
-        cursor: pointer;
-        z-index: 1000;
-    }
-
-    .navbar__toggle .bar {
-        display: block;
-        cursor: pointer;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background: #fff;
-    }
-
-    .navbar__item {
-        width: 100%;
-    }
-
-    .navbar__links {
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-    }
-
-    #mobile-menu {
-        position: absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate(5%, 20%);
-    }
-
-    .navbar__btn {
-        padding-bottom: 2rem;
-    }
-
-    .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 80px;
-        margin: 0;
-    }
-
-    
-
-    #mobile-menu.is-active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    #mobile-menu.is-active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    #mobile-menu.is-active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
+    display: none; /* Hide toggle */
 }
+
+
 
 /*Hero*/
 .main {
@@ -258,13 +139,6 @@
     text-align: center;
     padding-top: 30px;
 }
-/*
-.main__content img.about-img {
-    width: 275px;  /* Makes the image responsive 
-    height: 275px;  /* Ensures the image retains its aspect ratio 
-    display: block;  /* Removes any space below the image 
-    margin: 20px auto;  /* Centers the image horizontally and adds spacing 
-}*/
 
 
 .main__content h2 {
@@ -309,14 +183,6 @@
         margin-bottom: 4rem;
         
     }
-    /*
-    .main__content img.about-img {
-        width: 100%;  /* Makes the image responsive 
-        max-width: 250px;  /* Optional: Limits the image's maximum size 
-        height: auto;  /* Ensures the image retains its aspect ratio 
-        display: block;  /* Removes any space below the image 
-        margin: 20px auto;  /* Centers the image horizontally and adds spacing 
-    }*/
 
     .main__content h1{
         font-size: 3rem;
