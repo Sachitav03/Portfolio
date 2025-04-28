@@ -106,7 +106,40 @@
     display: none; /* Hide toggle */
 }
 
+/* Mobile view adjustments */
+@media screen and (max-width: 920px) {
+    /* Navbar container and items */
+    .navbar__container {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    #navbar__logo {
+        padding: 0;
+        padding-top: 70px;
+        padding-bottom: 10px;
+    }
+
+    /* Navbar menu: display items in a row */
+    .navbar__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* vertically center items */
+        background-color: #131313;
+        height: 60px; /* <-- control the height directly */
+        padding: 0; /* remove extra padding */
+    }
+
+    .navbar__item {
+        width: auto; /* Ensure items are aligned in a row */
+    }
+
+    .navbar__links {
+        padding: 0.3rem;
+        font-size: 1.2rem;
+    }
+}
 
 /*Hero*/
 .main {
@@ -115,11 +148,11 @@
     flex: 1;
     height: 100vh;
     background-color: #c4c6b7;
+    padding-top: 30px;
 }
 
 .main__container {
     display:block;
-   
     margin: 0 auto;
     padding: 0;
     height: auto;
