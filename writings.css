@@ -1,17 +1,15 @@
-.writings-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.body {
     background-color: #c4c6b7;
-    
-    gap: 20px;
-    padding: 20px;
+}
+
+.writings-section {
+    padding: 5px 10px;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #c4c6b7;
 }
 
 .writings-section h2 {
-    width: 100%;
     font-size: 2rem;
     background-color: #c4c6b7;
     background-image: linear-gradient(to top, #18697e 0%, #18697e 100%);
@@ -21,7 +19,15 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-align: center;
-    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.writings-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .writing {
@@ -33,32 +39,90 @@
     background-color: #f9f9f9;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
-.writing:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.writing img {
-    width: 100%;
-    height: auto;
+.writing-image {
+    position: relative;
+    overflow: hidden;
     border-radius: 8px;
 }
 
-.writing h4 {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-.writing p {
-    font-size: 1em;
-    margin-top: 10px;
-    color: #555;
-}
-
-.writing-link {
-    text-decoration: none;
-    color: inherit;
+.writing-image img {
+    width: 100%;
+    height: auto;
     display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Small floating overlay */
+.writing-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    right: -150%;
+    top: -10%;
+    bottom: -80%;
+    transform: translateX(-50%);
+    background-color: rgba(24, 105, 126, 0.9);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    max-width: 90%;
+    text-align: center;
+    pointer-events: none; /* allows mouse to pass through */
+}
+
+.writing-image:hover .writing-overlay {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+.writing-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Text inside overlay */
+.writing-overlay h4 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    margin-top: 17%;
+}
+
+.writing-overlay p {
+    font-size: 0.9em;
+    margin: 0;
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
+
+/* Title under image */
+.writing-text h4 {
+    font-size: 1.2em;
+    background-color: #c4c6b7;
+    background-image: linear-gradient(to top, #18697e 0%, #18697e 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .writing {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .writing {
+        width: 100%;
+    }
 }
