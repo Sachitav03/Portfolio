@@ -151,7 +151,7 @@
     flex: 1;
     height: 100vh;
     background-color: #f3f4ef;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .main__container {
@@ -206,7 +206,6 @@
 @media screen and ( max-width: 768px) {
     .main{
         grid-template-columns: 1fr;
-        padding-top: 20px;
     }
     .main__container {
         display: flow-root;
@@ -302,6 +301,6 @@
     background-color: #49494a;
     color: white;
     font-size: 0.9em;
-    margin-top: 25px;
+    margin-top: 0px;
     border-top: 1px solid #ccc;
 }
