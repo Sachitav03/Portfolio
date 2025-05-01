@@ -206,6 +206,7 @@
 @media screen and ( max-width: 768px) {
     .main{
         grid-template-columns: 1fr;
+        padding-top: 20px;
     }
     .main__container {
         display: flow-root;
